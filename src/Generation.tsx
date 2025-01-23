@@ -1,8 +1,9 @@
-import { Paintbrush, RefreshCw, Ship } from 'lucide-react';
 import React from 'react';
-import MusicDemo from './components/MusicDemo';
+import MusicDemo from './MusicDemo';
 import { MusicApp } from './components/builder/music/MusicApp';
-import Input from './components/TextInput';
+import Input from './TextInput';
+import ProductivityDemo from './ProductivityDemo';
+import { IssueBoardPage } from './components/builder/issueBoard/IssueBoardPage';
 
 const WelcomePage = () => {
 	return (
@@ -13,11 +14,19 @@ const WelcomePage = () => {
 					<h2 className="text-lg font-bold mb-4">Static</h2>
 					<MusicApp />
 				</div>
+        <div className="bg-white p-4 rounded-xl mt-4">
+					<h2 className="text-lg font-bold mb-4">Static</h2>
+					<IssueBoardPage />
+				</div>
 			</div>
 
 			<div>
 				<h2 className="text-2xl font-bold">Ion</h2>
 				<div className="bg-white p-4 rounded-xl mt-4">
+					<h2 className="text-lg font-bold mb-4">Hover state + functional components</h2>
+					<ProductivityDemo />
+				</div>
+        <div className="bg-white p-4 rounded-xl mt-4">
 					<h2 className="text-lg font-bold mb-4">Hover state + functional components</h2>
 					<MusicDemo />
 				</div>
